@@ -1,0 +1,31 @@
+﻿<br />
+<div class="p-4" style="border-radius:20px;">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-primary">Trail List</h2>
+        </div>
+        <div class="col-6" style="text-align:right">
+            <a asp-action="Upsert" asp-controller="Trails" class="btn btn-primary text-white">
+                <i class="fas fa-plus"></i> &nbsp; Create New Trail
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div style="background-color:#cde8e2" class="p-3 rounded">
+        <table id="tblData" class="table table-bordered table-hover" style="width:100%">
+            <thead>
+                <tr>
+                    <th style="width:30%">National Park</th>
+                    <th style="width:30%">Trail Name</th>
+                    <th style="width:10%">Distance</th>
+                    <th style="width:10%">Elevation</th>
+                    <th style="width:20%">Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+    @section Scripts{
+        <script src="~/js/trail.js"></script>
+    }
